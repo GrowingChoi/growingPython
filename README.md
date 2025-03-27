@@ -1,2 +1,3 @@
-# growingPython
-SK Network 13기 Python 과정 수업 소스코드
+# 안녕하세요!
+SK Network 13기 Python 과정 수업 소스코드와
+설명에 대한 예제와 자그마한 문제들의 소스코드를 업로드한 공간입니다.
