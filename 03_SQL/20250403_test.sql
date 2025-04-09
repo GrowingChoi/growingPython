@@ -93,11 +93,15 @@ VALUES (
     , null
 );
 
-
-
-
-
 commit;
 SELECT * 
   FROM MEMBER;
+
+
+
+
+
+
+
+
  
