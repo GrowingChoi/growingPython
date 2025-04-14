@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+   
 
 ############################################################
 # sidebar는 화면 왼쪽에 생기는 패널로 `st.sidebar`를 통해 정의한다.
@@ -14,32 +15,36 @@ import numpy as np
 st.set_page_config(page_title="타이틀")
 
 
-v1 = st.sidebar.slider("X", 1, 10)
-st.write("선택된 값: ", f"**{v1}**")
+# v1 = st.sidebar.slider("X", 1, 10)
+# st.write("선택된 값: ", f"**{v1}**")
 
-v2 = st.sidebar.text_input("이름")
-st.write("이름: " + f"**{v2}**")
+# v2 = st.sidebar.text_input("이름")
+# if v2:
+#     st.write("이름: " + f"**{v2}**")
 
-v3 = st.sidebar.radio(
-    "지역선택",
-    ["서울", "인천", "부산"],
-    captions=["2020", "2020", "2023"],
-    index=None,  # 아무것도 선택되지 않도록 한다.
-)
-
+# v3 = st.sidebar.radio(
+#     "지역선택",
+#     ["서울", "인천", "부산"],
+#     captions=["2020", "2020", "2023"],
+#     index=None,  # 아무것도 선택되지 않도록 한다.
+# )
+# if v3:
+#     st.write("지역:", v3)
 #######################
 # With 문으로 정의
 #######################
-# with st.sidebar:
-#    wv1 = st.slider("Y", 1, 10)
-#    wv2 = st.text_input("이름")
-#    wv3 = st.radio(
-#        "지역선택",
-#        ["서울", "인천", "부산"],
-#        captions=["2020", "2020", "2023"],
-#        index=None,  # 아무것도 선택되지 않도록 한다.
-#    )
+with st.sidebar:
+   st.title("검색조건")
+   wv1 = st.slider("Y", 1, 10)
+   wv2 = st.text_input("이름")
+   wv3 = st.radio(
+       "지역선택",
+       ["서울", "인천", "부산"],
+       captions=["2020", "2020", "2023"],
+       index=None,  # 아무것도 선택되지 않도록 한다.
+   )
 
-# st.write("선택된 값: ", f"**{wv1}**")
-# st.write("이름: " + f"**{wv2}**")
-# st.write(f"선택한 지역: **{wv3}**")
+st.write("선택된 값: ", f"**{wv1}**")
+st.write("이름: " + f"**{wv2}**")
+st.write(f"선택한 지역: **{wv3}**")
+
