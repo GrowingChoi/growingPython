@@ -1,11 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> e222743 (streamlit, pandas 내용추가)
 ####################################################################################
 # 표(Table 출력)
 # 
