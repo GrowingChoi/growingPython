@@ -7,6 +7,8 @@ __pycache__/
 # C extensions
 *.so
 
+#딥러닝 대용량 파일 무시
+09_딥러닝_기본/data/
 # Distribution / packaging
 .Python
 build/
