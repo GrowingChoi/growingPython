@@ -9,6 +9,7 @@ __pycache__/
 
 #딥러닝 대용량 파일 무시
 09_딥러닝_기본/data/
+11_NLP_Embedding/datasets.zip
 # Distribution / packaging
 .Python
 build/
