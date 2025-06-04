@@ -176,3 +176,4 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+12_Huggingface_lib/models/nsmc/model.safetensors
