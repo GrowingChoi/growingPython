@@ -10,6 +10,7 @@ __pycache__/
 vector_store/
 #딥러닝 대용량 파일 무시
 09_딥러닝_기본/data/
+99_LevelUp
 11_NLP_Embedding/datasets.zip
 # Distribution / packaging
 .Python
