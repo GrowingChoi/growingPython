@@ -6,7 +6,7 @@ __pycache__/
 
 # C extensions
 *.so
-.env
+*.env
 env
 vector_store/
 #딥러닝 대용량 파일 무시
