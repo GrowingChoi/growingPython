@@ -1,0 +1,35 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> 1f89af1af2cf54d1d259a1160e97d4e77d224ec2
+# 웹 애플리케이션
+
+<<<<<<< HEAD
+streamlit>=1.28.0
+=======
+# LangChain 핵심 패키지
+>>>>>>> 1f89af1af2cf54d1d259a1160e97d4e77d224ec2
+langchain>=0.1.0
+langchain-openai>=0.0.5
+langchain-community>=0.0.20
+langchain-chroma>=0.1.0
+langchain-core>=0.1.20
+langsmith>=0.0.70
+# OpenAI
+openai>=1.6.0
+
+# Vector Database
+chromadb>=0.4.18
+sentence-transformers>=2.2.2
+
+# 데이터 처리
+pandas>=2.1.0
+numpy>=1.24.0
+
+# 기타 필수 패키지
+>>>>>>> 1f89af1af2cf54d1d259a1160e97d4e77d224ec2
+requests>=2.31.0
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+typing-extensions>=4.8.0
+
