@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+
+# 단순 자료
+data/
+
+# Jupyter Notebook 체크포인트
+.ipynb_checkpoints/
+
+# 환경 설정
+.env
+*.env
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Log files
+*.log
+
+# 데이터/출력
+data/raw/
+outputs/
+*.csv
+*.xlsx
