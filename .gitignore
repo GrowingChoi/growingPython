@@ -6,7 +6,8 @@ __pycache__/
 
 # C extensions
 *.so
-.env
+*.env
+env
 vector_store/
 #딥러닝 대용량 파일 무시
 09_딥러닝_기본/data/
