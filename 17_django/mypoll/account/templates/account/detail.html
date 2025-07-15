@@ -1,0 +1,42 @@
+<!--account/templates/account/detail.html-->
+{% extends "layouts/main_layout.html" %}
+{% block title %} {{user.username}} 정보 {% endblock title %}
+
+{% block contents %}
+<h1>회원 정보 조회</h1>
+<table class="table">
+    <tr>
+        <th>User name</th>
+        <td>{{user.username}}</td>
+    </tr>
+    <tr>
+        <th>회원이름</th>
+        <td>{{user.name}}</td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td>{{user.email}}</td>
+    </tr>
+    <tr>
+        <th>생일</th>
+        <td>{{user.birthday}}</td>
+    </tr>
+</table>
+<!-- 프로필 사진 -->
+<b>프로필 사진</b><br>
+{% if user.profile_img %}
+    {#{user.profile_img}#}
+    <img src="{{user.profile_img.url}}"><br>
+    다운로드: <a href="{{user.profile_img.url}}">{{user.profile_img}}</a>
+{% else %}
+    프로필 사진을 등록하지 않았습니다.
+{% endif %}
+
+<div class="mt-5">
+    <a href="{% url 'account:password_change'%}" class="btn btn-primary">패스워드변경</a>
+    <a href="{% url 'account:update'%}" class="btn btn-primary">회원정보변경</a>
+    <a href="{% url 'account:delete' %}" 
+       class="btn btn-danger"
+       onclick="return confirm('정말 탈퇴하겠습니까?')">회원탈퇴</a>
+</div>
+{% endblock contents %}

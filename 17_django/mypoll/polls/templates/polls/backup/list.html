@@ -1,0 +1,25 @@
+<!-- polls/templates/polls/list.html -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설문 목록</title>
+</head>
+<body>
+    <a href="/polls/vote_create">설문등록</a>
+    <a href="/polls/list">설문목록</a>
+    <hr>
+
+    <h1>설문 목록</h1>
+    <!-- Context Value을 출력 -->
+    {% for question in question_list %}
+        <!--a href="/polls/vote_form/{{question.pk}}" -->
+        <a href="{% url 'polls:vote_form' question.pk %}">
+            {{question.pk}}. {{question.question_text | truncatewords:4}}
+        </a><br>
+    {% empty %}
+        <b>등록된 설문이 없습니다.</b>
+    {% endfor %}
+</body>
+</html>
