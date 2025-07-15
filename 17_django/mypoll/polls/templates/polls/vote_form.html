@@ -1,0 +1,31 @@
+<!-- polls/templates/polls/vote_form.html -->
+{% extends "layouts/main_layout.html" %}
+
+{% block title%}설문폼{%endblock title%}
+{% block contents %}
+<h1>설문</h1>
+<h2>질문: {{question.pk}}. {{question.question_text}}</h2>
+설문등록일시: {{question.pub_date | date:'Y/m/d H:i:s'}}
+<br><br>
+{% if error_message %}
+    <div style="color:red;font-size:0.8em">
+        {{error_message}}
+    </div>
+{% endif %}
+
+<form action="{% url 'polls:vote' %}" method="post">
+    {% csrf_token %}  <!--post 요청일 경우 필수로 csrf_token 태그를 사용.-->
+
+    <input type="hidden" name="question_id" value="{{question.pk}}">
+    {% for choice in question.choice_set.all %}
+        <label for="{{choice.pk}}">{{choice.choice_text}}</label>
+        <input type="radio" name="choice" value="{{choice.pk}}" id="{{choice.pk}}"><br>
+    {% endfor %}
+    
+    {# 로그인 안한 경우 투표를 못하도록 처리 #}
+    {% if user.is_authenticated %}
+        <button type="submit" class="btn btn-primary">투표</button>
+        <button type="reset" class="btn btn-primary">선택해제</button>
+    {% endif %}
+</form>
+{% endblock contents %}

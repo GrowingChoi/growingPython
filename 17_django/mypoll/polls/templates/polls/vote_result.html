@@ -1,0 +1,13 @@
+<!-- polls/templates/polls/vote_result.html -->
+{% extends "layouts/main_layout.html" %}
+
+{% block title%}설문 결과{%endblock title%}
+{% block contents%}
+    <h1>설문 투표 결과</h1>
+    <h2>{{question.pk}}. {{question.question_text}}</h2>
+    <ol>
+        {% for choice in question.choice_set.all %}
+            <li>{{choice.choice_text}} - {{choice.votes}}</li>
+        {% endfor %}
+    </ol>
+{%endblock contents%}
