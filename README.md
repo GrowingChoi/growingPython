@@ -32,5 +32,47 @@
 ![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
 ![Sourcetree](https://img.shields.io/badge/Sourcetree-0052CC?logo=sourcetree&logoColor=white)
 
+## 🛠 Tech Stack (Wordmark Style)
+
+## 🛠 Tech Stack (Wordmark Style)
+
+<p align="left">
+
+  <!-- Languages -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" width="120" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg" width="120" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" width="120" />
+
+  <!-- Frontend -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" width="140" />
+
+  <!-- ML / DL -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original-wordmark.svg" width="120" />
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" width="140" />
+  <img src="https://img.shields.io/badge/Machine%20Learning-102230?style=flat-square&logo=scikitlearn&logoColor=white" height="40" />
+  <img src="https://img.shields.io/badge/Deep%20Learning-CC0000?style=flat-square&logo=pytorch&logoColor=white" height="40" />
+
+  <!-- RAG / LLM -->
+  <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/openai.svg" width="120" />
+  <img src="https://raw.githubusercontent.com/simple-icons/simple-icons/master/icons/langchain.svg" width="120" />
+  <img src="https://img.shields.io/badge/RAG%20Pipeline-1A73E8?style=flat-square" height="40" />
+  <img src="https://img.shields.io/badge/Embeddings(KoE5%20%2F%20OpenAI)-4285F4?style=flat-square" height="40" />
+
+  <!-- Databases -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" width="140" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" width="140" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg" width="120" />
+
+  <!-- Vector DB (local recommended) -->
+  <img src="./assets/logos/qdrant.png" width="120" />
+  <img src="./assets/logos/pinecone.png" width="140" />
+
+  <!-- Cloud / DevOps -->
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="160" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" width="160" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg" width="140" />
+
+</p>
+
 
 
